@@ -1,0 +1,25 @@
+<script type="text/javascript">
+function exec() {
+  fetch('/exec').then(res=>{
+    if (res.ok) {
+      res.text().then(data=>{
+        console.log(data)
+      })
+    } else {
+      console.warn('response not ok')
+    }
+  }).catch(err=>{
+    console.warn(err)
+  })
+}
+</script>
+
+<div>
+  <div class="container p-5 mt-5 mb-5 bg-whtie rounded-lg shadow">
+    <div class="text-center">
+      <button class="btn btn-primary btn-lg shadow" onclick="exec()">Exec shell command</button>
+    </div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />

@@ -6,12 +6,14 @@ const multer  = require('multer')
 const cors  = require('cors')
 
 const HTTP_PORT = 3030
+const PUBLIC_PATH = 'public'
 
 const app = express()
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(errorhandler())
 app.use(cors())
+app.use(express.static(PUBLIC_PATH))
 
 app.get('/',(req,res,next)=>{
   res.status(200).send(`Hello, world`)
