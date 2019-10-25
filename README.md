@@ -10,7 +10,13 @@
 
 > http://localhost:3030
 
-## Go to http://localhost:3030/exec
+## Usage example
+
+1. Go to http://localhost:3030/usage.html
+2. Click the `Exec shell command`
+3. See the terminal to check for the output
+
+Calling API at http://localhost:3030/exec
 
 See `terminal`, these should be the output
 
