@@ -12,7 +12,7 @@
 
 ## Usage example
 
-![]('./screenshot.png')
+![](./screenshot.png)
 
 1. Go to http://localhost:3030/usage.html
 2. Click the `Exec shell command`
@@ -43,6 +43,10 @@ app.get('/exec',(req,res,next)=>{
 
 For more supported shell commands in `ShellJS` refer to `https://github.com/shelljs/shelljs`
 
+### Usage
+
+See `public/usage.html`
+
 ### Note
 
 NodeJS support to exec shell command built-in by default
@@ -64,4 +68,4 @@ execute("echo hello", s=>{
 })
 ```
 
-However using `shelljs` is much more convenient
+ShellJS helps simplify using it with a lot of other handlers.
