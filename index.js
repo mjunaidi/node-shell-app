@@ -24,6 +24,8 @@ app.get('/exec',(req,res,next)=>{
   shell.exec('echo Executing, shellJS')
   shell.exec('echo Hello, hello')
   shell.exec('echo good bye')
+
+  res.status(200).send(`Done`)
 })
 
 app.use((req,res)=>{
