@@ -21,9 +21,10 @@ app.get('/',(req,res,next)=>{
 
 app.get('/exec',(req,res,next)=>{
   const shell = require('shelljs')
-  shell.exec('echo Executing, shellJS')
-  shell.exec('echo Hello, hello')
-  shell.exec('echo good bye')
+  //shell.exec('echo Executing, shellJS')
+  //shell.exec('echo Hello, hello')
+  //shell.exec('echo good bye')
+  shell.exec('sh ./public/script.sh')
 
   res.status(200).send(`Done`)
 })
