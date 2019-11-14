@@ -16,7 +16,7 @@
 
 ![](./terminal.png)
 
-1. Go to http://localhost:3030/usage.html
+1. Go to http://localhost:3030
 2. Click the `Exec shell command`
 3. See the terminal to check for the output
 
@@ -48,7 +48,7 @@ For more supported shell commands in `ShellJS` refer to `https://github.com/shel
 
 ### Usage
 
-See `public/usage.html`
+See `public/index.html`
 
 ### Note
 
