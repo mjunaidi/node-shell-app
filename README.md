@@ -25,9 +25,10 @@ Calling API at http://localhost:3030/exec
 See `terminal`, these should be the output
 
 ```
-Executing, shellJS
-Hello, hello
-good bye
+this is shell script
+$0 =  ./public/script.sh
+$1 =  device0
+$2 =  127.0.0.1
 ```
 
 ## The code
