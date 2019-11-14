@@ -1,5 +1,6 @@
-function exec() {
-  fetch('/exec').then(res=>{
+function exec(id,ip) {
+  const url = `/exec/${id}/${ip}`
+  fetch(url).then(res=>{
     console.log('exec')
     if (res.ok) {
       res.text().then(data=>{

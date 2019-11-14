@@ -19,12 +19,15 @@ app.get('/',(req,res,next)=>{
   res.status(200).send(`Hello, world`)
 })
 
-app.get('/exec',(req,res,next)=>{
+app.get('/exec/:id/:ip',(req,res,next)=>{
+
+  const {id,ip} = req.params
+
   const shell = require('shelljs')
   //shell.exec('echo Executing, shellJS')
   //shell.exec('echo Hello, hello')
   //shell.exec('echo good bye')
-  shell.exec('sh ./public/script.sh')
+  shell.exec(`sh ./public/script.sh ${id} ${ip}`)
 
   res.status(200).send(`Done`)
 })
